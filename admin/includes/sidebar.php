@@ -17,9 +17,17 @@
 		</form>
 		<ul class="nav menu">
 
-			<li class="active"><a href="index.php"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li class="
 
-			<li><a href="users.php"><em class="fa fa-users">&nbsp;</em> Users</a></li>
+			<?= $current == 'index' ? 'active' : '' ?>
+
+			"><a href="index.php"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+
+			<li class="
+
+			<?= $current == 'users' ? 'active' : '' ?>
+
+			"><a href="users.php"><em class="fa fa-users">&nbsp;</em> Users</a></li>
 
 
 			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
