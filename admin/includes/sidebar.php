@@ -30,6 +30,14 @@
 			"><a href="users.php"><em class="fa fa-users">&nbsp;</em> Users</a></li>
 
 
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li class="
+
+			<?= $current == 'products' ? 'active' : '' ?>
+
+			"><a href="products.php"><em class="fa fa-users">&nbsp;</em> Products</a></li>
+
+
+
+			<li><a href="functions/logout.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
