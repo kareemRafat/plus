@@ -17,7 +17,7 @@
 					</thead>
 					<tbody>
 			<?php 
-			include "functions/connect.php";
+			include_once "functions/connect.php";
 			$users = "SELECT * FROM users";
 			$users = $conn -> query($users);
 			// show error if the query return false

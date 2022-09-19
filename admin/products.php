@@ -2,6 +2,7 @@
 
 	$current = 'products';
 	include 'includes/navbar.php';
+	include 'functions/helper.php';
 	include 'includes/sidebar.php';
 
 	

@@ -17,7 +17,7 @@
 					</thead>
 					<tbody>
 					<?php
-						require_once("functions/connect.php");
+						include_once("functions/connect.php");
 						$query = "SELECT * FROM products ";
 						$result = $conn -> query($query);
 						// $row = $result -> fetch_assoc();
