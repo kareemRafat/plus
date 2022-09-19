@@ -1,6 +1,7 @@
 
+<!-- enctype xxx-urlencoded -->
 
-<form method="post" action="functions/products/add.php">
+<form method="post" action="functions/products/add.php" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleInputEmail1">name</label>
     <input type="text" name="name" value="" class="form-control" id="exampleInputEmail1">
@@ -17,7 +18,7 @@
 
   <div class="form-group">
     <label for="exampleInputEmail1">image</label>
-    <input type="file" name="img" value="" class="form-control" id="exampleInputEmail1" >
+    <input type="file" name="img" multiple value="" class="form-control" id="exampleInputEmail1" >
   </div>
 
 <br>

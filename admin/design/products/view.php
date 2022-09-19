@@ -28,7 +28,7 @@
 							<td><?= $row['name'] ?></td>
 							<td><?= $row['price'] ?></td>
 							<td><?= $row['sale'] ?></td>
-							<td><?= $row['img'] ?></td>
+							<td><img style="width: 50px;" src="images/<?= $row['img'] ?>" alt=""></td>
 
 							<td>
 							
