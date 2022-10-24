@@ -13,13 +13,12 @@ $('.leave-comment').submit(function(event){
 
 	// 3- send data to the server
 	$.post('functions/addNewMessage.php' , {
-		Name : name ,
-		Phone : phone ,
-		Email : email ,
-		Message : message
+		name , phone , email , message
 		
 	} , function(data){
+
 		$('.res').html(data);
+		
 	})
 
 

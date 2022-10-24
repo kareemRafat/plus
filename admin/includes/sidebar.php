@@ -36,7 +36,11 @@
 
 			"><a href="products.php"><em class="fa fa-users">&nbsp;</em> Products</a></li>
 
+			<li class="
 
+			<?= $current == 'messages' ? 'active' : '' ?>
+
+			"><a href="messages.php"><em class="fa fa-users">&nbsp;</em> Messages</a></li>
 
 			<li><a href="functions/logout.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>

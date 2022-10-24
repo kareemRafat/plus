@@ -41,7 +41,21 @@
 				<a class="navbar-brand" href="#"><span>Lumino</span>Admin</a>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-						<em class="fa fa-envelope"></em><span class="label label-danger">15</span>
+						<em class="fa fa-envelope"></em><span class="label label-danger">
+
+				<?php 
+
+				include_once 'functions/connect.php';
+				$selectView = "SELECT count(id) as total FROM messages WHERE view = 0";
+				$queryView = $conn -> query($selectView);
+				$messageView = $queryView -> fetch_assoc();
+
+				echo $messageView['total'];
+
+				 ?>
+
+
+						</span>
 					</a>
 						<ul class="dropdown-menu dropdown-messages">
 							<li>

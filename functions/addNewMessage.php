@@ -1,10 +1,10 @@
 <?php 
 
 
-$name = $_POST['Name'];
-$phone = $_POST['Phone'];
-$email = $_POST['Email'];
-$message = $_POST['Message'];
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
 include '../admin/functions/connect.php';
 
